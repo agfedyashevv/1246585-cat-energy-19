@@ -8,8 +8,11 @@
 
     <header class="header">
       <nav class="nav">
-        <a class="nav__logo">
-          <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Логотип интернет-магазина Кэт энерджи">
+        <a class="nav__logo-cat">
+          <img src="https://via.placeholder.com/100x100" width="50" height="50" alt="Логотип интернет-магазина Кэт энерджи">
+        </a>
+        <a class="nav__logo-name">
+          <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="Название интернет-магазина Кэт энерджи">
         </a>
 
         <button class="nav__toggle" type="button">Открыть меню</button>
@@ -33,7 +36,7 @@
       <h1 class="visually-hidden">Интернет-магазин "Кэт энерджи"</h1>
 
       <section class="select-program">
-        <h2 class="section-title">Функциональное питание для котов</h2>
+        <h2 class="select-program__title">Функциональное питание для котов</h2>
         <p class="select-program__slogan">Занялся собой? Займись котом!</p>
         <div class="select-program__image">
           <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Изображение банки с едой для кота">
@@ -50,7 +53,7 @@
               <p class="program__description">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a href="#" class="program__link link">Каталог Slim</a>
+              <a href="#" class="program__link">Каталог Slim</a>
             </article>
           </li>
           <li class="program__item">
@@ -59,15 +62,15 @@
               <p class="program__description">
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a href="#" class="program__link link">Каталог Pro</a>
+              <a href="#" class="program__link">Каталог Pro</a>
             </article>
           </li>
         </ul>
       </section>
 
-      <section class="it-works">
-        <h2 class="section-title">Как это работает</h2>
-        <ul class="it-works__list advantages">
+      <section class="advantages">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
           <li class="advantages__item advantages__item--useful">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
@@ -82,10 +85,55 @@
           </li>
         </ul>
       </section>
+
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__story">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__proof proof">
+          <div class="proof__item">
+            <p class="proof__title">5 кг</p>
+            <p class="proof__text">снижение веса</p>
+          </div>
+          <div class="proof__item">
+            <p class="proof__title">60 дней</p>
+            <p class="proof__text">затрачено времени</p>
+          </div>
+        </div>
+        <p class="example__spending">Затраты на питание: 15 000 руб.</p>
+        <div class="example__target slider">
+          <div class="example__photos slider__list">
+            <div class="example__photo slider__item">
+              <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Изображение кота до начала питания по программе">
+            </div>
+            <div class="example__photo slider__item">
+              <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Изображение кота, питающегося по программе">
+            </div>
+          </div>
+          <div class="example__buttons">
+            <button type="button" class="example__button example__button--before">Было</button>
+            <div class="example__toggle"></div>
+            <button type="button" class="example__button example__button--after">Стало</button>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
-      <div class="footer__wrap">
+      <div class="footer__map-block">
+        <h2 class="visually-hidden">Информация для дилеров и карта с местоположением интернет-магазина</h2>
+        <div class="footer__for-dealers for-dealers">
+          <p class="for-dealers__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="for-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="footer__map">
+          <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Карта с местоположением интернет-магазина">
+        </div>
+      </div>
+
+      <div class="footer__inner">
         <div class="footer__logo">
           <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Логотип Кэт энерджи">
         </div>
@@ -104,7 +152,7 @@
         </div>
         <div class="footer__copyright copyright">
           <div class="copyright__text">
-            <a class="footer__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
           <div class="copyright__logo">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
