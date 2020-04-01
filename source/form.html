@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -41,13 +42,13 @@
         <form class="pick-info__form form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__cat-info cat-info">
             <legend class="visually-hidden">Данные кота</legend>
-            <label class="cat-info__name">Имя:*
+            <label class="cat-info__label">Имя:*
               <input type="text" name="cat-name" id="id-cat-name" placeholder="Барсик" required>
             </label>
-            <label class="cat-info__weight">Вес (кг):*
+            <label class="cat-info__label">Вес (кг):*
               <input type="number" min="1" name="cat-weight" id="id-cat-weight" placeholder="7" required>
             </label>
-            <label class="cat-info__age">Возраст (лет):
+            <label class="cat-info__label">Возраст (лет):
               <input type="number" min="1" name="cat-age" id="id-cat-age" placeholder="7">
             </label>
           </fieldset>
@@ -70,10 +71,10 @@
 
           <fieldset class="form__cat-owner cat-owner">
             <legend class="cat-owner__title">Контактные данные (владельца кота)</legend>
-            <label class="cat-owner__email">E-mail:*
+            <label class="cat-owner__label">E-mail:*
               <input type="email" name="email" id="id-email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="cat-owner__phone">Телефон:*
+            <label class="cat-owner__label">Телефон:*
               <input type="tel" name="phone" id="id-phone" placeholder="8 (960) 900-60-90" required>
             </label>
           </fieldset>
@@ -85,25 +86,25 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__additional additional">
-            <legend class="additional__title">Дополнительно</legend>
-            <ul class="additional__list">
-              <li class="additional__item">
+          <fieldset class="form__extra extra">
+            <legend class="extra__title">Дополнительно</legend>
+            <ul class="extra__list">
+              <li class="extra__item">
                 <label>
                   <input type="checkbox" name="sugar-substitute" id="id-sugar-substitute" checked>Сахарозаменитель
                 </label>
               </li>
-              <li class="additional__item">
+              <li class="extra__item">
                 <label>
                   <input type="checkbox" name="sugar-water" id="id-water">Питьевая вода
                 </label>
               </li>
-              <li class="additional__item">
+              <li class="extra__item">
                 <label>
                   <input type="checkbox" name="milk" id="id-milk">Молоко
                 </label>
               </li>
-              <li class="additional__item">
+              <li class="extra__item">
                 <label>
                   <input type="checkbox" name="sugar-vitamins" id="id-vitamins">Витамины
                 </label>
