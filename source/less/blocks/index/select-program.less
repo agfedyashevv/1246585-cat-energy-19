@@ -1,0 +1,32 @@
+.select-program {
+  position: relative;
+  min-height: 480px;
+  background-color: inherit;
+  .padding-l-r();
+  padding-top: 30px;
+}
+
+.select-program::before {
+  position: absolute;
+  content: " ";
+  background: @green url(../../../img/index-background-mobile@1x.jpg) no-repeat top center;
+  margin: 0 auto;
+  .img-size(320px; 305px);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.select-program__title,
+.select-program__slogan {
+  color: @white;
+  text-align: center;
+}
+
+.select-program__title {
+  margin-bottom: 20px;
+}
+
+.select-program__slogan {
+  margin-bottom: 30px;
+}

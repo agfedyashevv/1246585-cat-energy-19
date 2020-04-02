@@ -1,0 +1,26 @@
+.advantages {
+  .padding-l-r();
+}
+
+.advantages__list {
+  .list-rest();
+  .list-style-none();
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: " ";
+  background: @green url("../img/advantage-picture-red.jpg") no-repeat;
+  .img-size(60px; 60px);
+  top: 0;
+  left: 0;
+}
+
+.advantages__item--useful::before {
+}
