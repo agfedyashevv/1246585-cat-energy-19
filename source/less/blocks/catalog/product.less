@@ -17,8 +17,17 @@
   border-bottom: 1px solid @grey-ed;
 }
 
+.product__item--border-cd {
+  border-top: 1px solid @grey-cd;
+}
+
+.product__item--border-cd:last-child {
+  border-bottom: 1px solid @grey-cd;
+}
+
+
 .product__title {
-  margin: 0;
+  .reset-to-zero();
   margin-bottom: 18px;
 }
 
@@ -27,6 +36,7 @@
   font-weight: 400;
   color: @black;
   .set-font-size(16px; 20px);
+  .uppercase();
 }
 
 .product__value,
