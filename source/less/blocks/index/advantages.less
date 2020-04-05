@@ -1,26 +1,40 @@
 .advantages {
   .padding-l-r();
+  padding-bottom: 42px;
 }
 
 .advantages__list {
-  .list-rest();
+  .reset-to-zero();
   .list-style-none();
 }
 
 .advantages__item {
+  font-family: @font-text;
+  font-weight: 400;
   position: relative;
   padding-left: 80px;
+  .set-font-size();
+  color: @greyish-brown;
+}
+
+.advantages__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .advantages__item::before {
   position: absolute;
-  content: " ";
-  background: @green url("../img/advantage-picture-red.jpg") no-repeat;
-  .img-size(60px; 60px);
+  content: "";
+  background-color: @green;
+  .set-img-size(60px; 60px);
   top: 0;
   left: 0;
 }
 
-.advantages__item--useful::before {
+.advantages__title {
+  font-family: @font-title;
+  font-weight: 400;
+  color: @black;
+  margin: 0;
+  .set-font-size(36px; 60px);
+  margin-bottom: 35px;
 }
