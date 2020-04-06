@@ -11,10 +11,7 @@
         <nav class="nav">
           <div class="nav__wrapper">
             <a class="nav__logo-cat">
-              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="Логотип интернет-магазина Кэт энерджи">
-            </a>
-            <a class="nav__logo-name">
-              <img src="https://via.placeholder.com/50x50" width="50" height="50" alt="Название интернет-магазина Кэт энерджи">
+              <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
             </a>
 
             <button class="nav__toggle" type="button">Открыть меню</button>
@@ -46,13 +43,13 @@
             <fieldset class="form__cat-info cat-info">
               <legend class="visually-hidden">Данные кота</legend>
               <label class="cat-info__label">Имя:*
-                <input type="text" name="cat-name" id="id-cat-name" placeholder="Барсик" required>
+                <input class="cat-info__input" type="text" name="cat-name" id="id-cat-name" placeholder="Барсик" required>
               </label>
               <label class="cat-info__label">Вес (кг):*
-                <input type="number" min="1" name="cat-weight" id="id-cat-weight" placeholder="7" required>
+                <input class="cat-info__input" type="number" min="1" name="cat-weight" id="id-cat-weight" placeholder="7" required>
               </label>
               <label class="cat-info__label">Возраст (лет):
-                <input type="number" min="1" name="cat-age" id="id-cat-age" placeholder="7">
+                <input class="cat-info__input" type="number" min="1" name="cat-age" id="id-cat-age" placeholder="7">
               </label>
             </fieldset>
 
@@ -75,9 +72,9 @@
             <fieldset class="form__cat-owner cat-owner">
               <legend class="cat-owner__title">Контактные данные (владельца кота)</legend>
               <label class="cat-owner__label">E-mail:*
-                <input type="email" name="email" id="id-email" placeholder="kuklachev@gmail.com" required>
+                <input class="cat-owner__input" type="email" name="email" id="id-email" placeholder="kuklachev@gmail.com" required>
               </label>
-              <label class="cat-owner__label">Телефон:*
+              <label class="cat-owner__input" class="cat-owner__label">Телефон:*
                 <input type="tel" name="phone" id="id-phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </fieldset>
@@ -85,7 +82,7 @@
             <fieldset class="form__comment comment">
               <legend class="comment__title">Комментарий</legend>
               <label class="comment__text">
-                <textarea name="comment" id="id-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="comment__textarea" rows="7" name="comment" id="id-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </fieldset>
 
@@ -124,7 +121,7 @@
       </main>
 
       <footer class="footer">
-        <div class="footer__map-block">
+        <div class="footer__map-block footer__map-block--grey">
           <h2 class="visually-hidden">Информация для дилеров и карта с местоположением интернет-магазина</h2>
           <div class="footer__for-dealers for-dealers">
             <p class="for-dealers__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>

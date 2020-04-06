@@ -1,0 +1,15 @@
+.cat-program {
+  display: flex;
+  border: none;
+}
+.cat-program__item {
+  font-family: @font-title;
+  font-weight: 400;
+  color: @black-label;
+  .set-font-size(16px; 18px);
+  .uppercase();
+}
+
+.cat-program__item:not(:last-child) {
+  padding-bottom: 13px;
+}

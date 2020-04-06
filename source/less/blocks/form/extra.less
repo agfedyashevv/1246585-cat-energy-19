@@ -1,0 +1,28 @@
+.extra {
+  border: none;
+}
+
+.extra__title {
+  font-family: @font-title;
+  font-weight: 400;
+  color: @black;
+  .set-font-size(24px; 24px);
+  margin-bottom: 30px;
+}
+
+.extra__list {
+  .list-style-none();
+  .reset-to-zero();
+}
+
+.extra__item {
+  font-family: @font-title;
+  font-weight: 400;
+  color: @black-label;
+  .set-font-size(16px; 18px);
+  .uppercase();
+}
+
+.extra__item:not(:last-child) {
+  margin-bottom: 28px;
+}
