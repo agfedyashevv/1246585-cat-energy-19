@@ -1,0 +1,25 @@
+.cat-info {
+  border: none;
+}
+
+.cat-info__label {
+  display: flex;
+  align-items: center;
+  font-family: @font-title;
+  font-weight: 400;
+  color: @black-label;
+  .set-font-size(16px; 18px);
+  .uppercase();
+}
+
+.cat-info__label:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.cat-info__input {
+  font-family: @font-title;
+  font-weight: 400;
+  color: @greyish-brown;
+  .set-font-size(16px; 18px);
+  .uppercase();
+}
