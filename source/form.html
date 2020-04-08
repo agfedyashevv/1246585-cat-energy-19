@@ -6,12 +6,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="page-wrap">
-      <header class="header">
+    <header class="header">
+      <div class="page-wrap">
         <nav class="nav">
           <div class="nav__wrapper">
             <a class="nav__logo-cat">
-              <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
+              </picture>
             </a>
 
             <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -31,10 +35,12 @@
             </ul>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="main">
-        <section class="pick-info">
+    <main class="main">
+      <section class="pick-info">
+        <div class="page-wrap">
           <div class="pick-info__intro">
             <h1 class="pick-info__title">Подбор программы</h1>
             <p class="pick-info__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -74,8 +80,8 @@
               <label class="cat-owner__label">E-mail:*
                 <input class="cat-owner__input" type="email" name="email" id="id-email" placeholder="kuklachev@gmail.com" required>
               </label>
-              <label class="cat-owner__input" class="cat-owner__label">Телефон:*
-                <input type="tel" name="phone" id="id-phone" placeholder="8 (960) 900-60-90" required>
+              <label class="cat-owner__label">Телефон:*
+                <input class="cat-owner__input" type="tel" name="phone" id="id-phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </fieldset>
 
@@ -117,13 +123,14 @@
               <p class="send-request__footnote">* — Обязательные поля</p>
             </div>
           </form>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
         <div class="footer__map-block footer__map-block--grey">
           <h2 class="visually-hidden">Информация для дилеров и карта с местоположением интернет-магазина</h2>
-          <div class="footer__for-dealers for-dealers">
+          <div class="footer__for-dealers for-dealers page-wrap">
             <p class="for-dealers__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
             <p class="for-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
@@ -132,9 +139,10 @@
           </div>
         </div>
 
-        <div class="footer__inner">
+      <div class="footer__inner">
+        <div class="page-wrap">
           <div class="footer__logo">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve" width="128" height="24">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve" width="128" height="24">
               <style type="text/css">
                 .st0 {
                   fill: #111111;
@@ -171,7 +179,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve" width="22" height="12">
                     <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                       c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
@@ -191,7 +199,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link social__link--insta" href="#" aria-label="Инстраграм">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve" width="17" height="17">
                     <style type="text/css">
                       .st0{fill:#231F20;}
@@ -206,7 +214,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link social__link--fb" href="#" aria-label="Фейсбук">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve" width="10" height="19">
                     <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                       h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
@@ -229,7 +237,7 @@
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
