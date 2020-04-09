@@ -50,7 +50,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .select-program {
+    margin-bottom: 380px;
+  }
+
   .select-program__wrap {
+    position: relative;
     padding-left: 90px;
   }
 
@@ -75,11 +80,26 @@
 
   .select-program__button {
     .set-font-size(20px; 20px);
-    min-width: 100px;
+    width: 245px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .select-program__image-move {
+    position: absolute;
+    .set-img-size(auto; 609px);
+    left: 50%;
+    top: 0;
+    transform: translate(-50%; 200px);
+    z-index: -1;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .select-program {
+    margin-bottom: 120px;
+  }
+
   .select-program__slogan {
     margin-bottom: 53px;
   }
@@ -89,10 +109,11 @@
     padding-left: 84px;
   }
 
-  .header__image {
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat top right;
-    height: 696px;
+  .select-program__image-move {
+    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    .set-img-size(auto; 500px);
+    transform: translate(450px; -40px);
   }
 }
