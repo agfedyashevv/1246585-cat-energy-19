@@ -2,7 +2,7 @@
   font-family: @font-title;
   font-weight: 400;
   .set-font-size(36px; 60px);
-  color: inherit;
+  color: @black;
   margin: 0;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -10,4 +10,11 @@
 
 .catalog__list {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    .set-font-size(60px; 60px);
+    margin-bottom: 156px;
+  }
 }
