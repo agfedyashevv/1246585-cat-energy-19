@@ -1,13 +1,12 @@
 .footer__inner {
   background-color: @grey-f2;
-  .padding-l-r();
   padding-top: 39px;
+  text-align: center;
 }
 
 .footer__for-dealers {
   display: flex;
   justify-content: space-between;
-  .padding-l-r();
   padding-top: 31px;
   padding-bottom: 26px;
 }
@@ -15,6 +14,7 @@
 .footer__map {
   background-color: @under-map-color;
   height: 400px;
+  text-align: center;
 }
 
 .footer__map-block--grey {
@@ -49,4 +49,33 @@
   align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__logo,
+  .footer__social {
+    border: none;
+    margin-right: 45px;
+  }
+
+  .footer__logo,
+  .footer__social,
+  .footer__copyright {
+    padding: 0;
+  }
+
+  .footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__inner {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .footer__link {
+    margin-right: 23px;
+  }
 }

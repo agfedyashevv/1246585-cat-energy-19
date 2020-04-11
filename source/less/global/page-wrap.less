@@ -1,0 +1,33 @@
+.page-wrap {
+  width: @mobile-width;
+  margin: 0 auto;
+  .padding-l-r();
+}
+
+@media (min-width: @tablet-width) {
+  .page-wrap {
+    width: @tablet-width;
+    .padding-l-r(30px; 30px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-wrap {
+    width: @desktop-width;
+    .padding-l-r(40px; 40px);
+  }
+}
+
+// section {
+//   box-shadow: 0 0 2px red;
+// }
+//
+// div,
+// p,
+// h1, h2, h3 {
+//   box-shadow: 0 0 2px blue;
+// }
+//
+// form {
+//   box-shadow: 0 0 2px green;
+// }
