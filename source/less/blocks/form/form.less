@@ -8,11 +8,11 @@
 
 .form__cat-program {
   .padding-l-r(0; 0);
+  border: none;
   margin-left: 0;
   margin-right: 0;
   padding-top: 21px;
   padding-bottom: 22px;
-  margin-bottom: 30px;
   border-bottom: 1px solid @grey-ed;
 }
 
@@ -20,7 +20,7 @@
   .padding-l-r(0; 0);
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: 31px;
+  border: none;
 }
 
 .form__comment {
@@ -28,12 +28,59 @@
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 15px;
-  margin-bottom: 15px;
 }
 
 .form__extra {
   .padding-l-r(0; 0);
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: 43px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__cat-info {
+    border: none;
+    margin-bottom: 26px;
+  }
+
+  .form-wrapper {
+    margin-left: 38px;
+    margin-right: 47px;
+  }
+
+  .form__cat-program {
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .form__cat-owner {
+    padding-bottom: 40px;
+  }
+
+  .form__comment {
+  margin-bottom: 50px;
+  }
+
+  .pick-info__form {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 73px;
+  }
+
+  .form__cat-info,
+  .form__cat-program {
+    .reset-to-zero();
+    width: 570px;
+  }
+
+  .form-wrapper {
+    margin: 0;
+  }
 }
