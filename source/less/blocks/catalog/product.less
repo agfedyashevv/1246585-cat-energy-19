@@ -1,11 +1,12 @@
-.product {
-  .list-style-none();
-}
-
 .product,
 .product__link,
 .product__text {
   .reset-to-zero();
+}
+
+.product {
+  .list-style-none();
+  margin-bottom: 39px;
 }
 
 .product__item {
@@ -37,7 +38,7 @@
   padding-right: 30%;
 }
 
-.product__title--margin {
+.product__title--custom {
   margin-bottom: 15px;
 }
 
@@ -89,7 +90,7 @@
   margin-bottom: 20px;
 }
 
-.product__description--margin {
+.product__description--custom {
   margin-bottom: 14px;
 }
 
@@ -106,6 +107,10 @@
   font-weight: 400;
   color: @greyish-brown;
   .set-font-size(14px; 14px);
+}
+
+.product__price {
+  text-align: right;
 }
 
 .product__inner {
@@ -170,6 +175,21 @@
     min-height: 140px;
     background-color: @white;
     border: 1px solid @grey-e6;
+    margin: 0;
+    width: auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-top: -1px;
+  }
+
+  .product__box {
+    display: flex;
+  }
+
+  .product__title--custom,
+  .product__description--custom {
+    .reset-to-zero();
+    width: 50%;
   }
 
   .product__link {
@@ -210,8 +230,17 @@
     height: 31px;
   }
 
+  .product__row--custom {
+    border: none;
+    text-align: right;
+  }
+
   .product__description {
     border-collapse: collapse;
+  }
+
+  .product__title--custom {
+    text-align: left;
   }
 }
 
@@ -227,5 +256,46 @@
   .product__link--more,
   .product__text {
     .padding-l-r(0; 0);
+  }
+
+  .product__item--custom {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    min-height: auto;
+    border: none;
+    border-top: 1px solid @grey-cd;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    .padding-l-r(0; 0);
+  }
+
+  .product__item--custom:last-child {
+    border: none;
+    border-top: 1px solid @grey-cd;
+    border-bottom: 1px solid @grey-cd;
+  }
+
+  .product__package {
+    text-align: left;
+  }
+
+  .product__title--custom,
+  .product__description--custom {
+    width: 285px;
+  }
+
+  .product__title--custom {
+    padding: 0;
+  }
+
+  .product__box {
+    width: 610px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product__button--custom {
+    width: 245px;
   }
 }

@@ -18,3 +18,31 @@
   .set-font-size(14px; 20px);
   color: @greyish-brown;
 }
+
+@media (min-width: @tablet-width) {
+  .for-dealers__text,
+  .for-dealers__address {
+    width: 180px;
+  }
+
+  .for-dealers__text {
+    .set-font-size(20px; 25px);
+  }
+
+  .for-dealers__address {
+    .set-font-size(16px; 20px);
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .for-dealers__text,
+  .for-dealers__address {
+    width: 180px;
+  }
+
+  .for-dealers__address {
+    .set-font-size(16px; 20px);
+    text-align: left;
+  }
+}

@@ -3,6 +3,13 @@
   .reset-to-zero;
 }
 
+.proof__text {
+  font-family: @font-text;
+  font-weight: 400;
+  .set-font-size(12px; 12px);
+  color: @greyish-brown;
+}
+
 .proof__title {
   font-family: @font-title;
   font-weight: 400;
@@ -10,4 +17,34 @@
   color: @black;
   .uppercase();
   margin-bottom: 10px;
+}
+
+.proof {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proof__item {
+  width: 124px;
+  text-align: center;
+  border: 1px solid @grey-cd;
+  padding-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .proof {
+    width: 366px;
+  }
+
+  .proof__item {
+    width: 162px;
+  }
+
+  .proof__title {
+    .set-font-size(30px; 37px);
+  }
+
+  .proof__text {
+    .set-font-size(14px; 14px);
+  }
 }

@@ -12,7 +12,33 @@
   padding-bottom: 30px;
 }
 
-.additional__list {
-  margin: 0;
-  margin-bottom: 39px;
+@media (min-width: @tablet-width) {
+  .additional {
+    padding-top: 0;
+  }
+
+  .additional__title {
+    .set-font-size(36px; 36px);
+    padding-left: 38px;
+    margin-bottom: 75px;
+  }
+
+  .additional__list--custom {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__title {
+    padding-left: 0;
+  }
+
+  .additional__list--custom {
+    width: 895px;
+  }
+
+  .additional__flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }

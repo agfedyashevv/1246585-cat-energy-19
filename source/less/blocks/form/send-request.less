@@ -11,3 +11,35 @@
   text-align: center;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .send-request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .send-request__button {
+    .set-font-size(20px; 20px);
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  .send-request__button,
+  .send-request__footnote {
+    width: 288px;
+  }
+
+  .send-request__footnote {
+    .set-font-size(16px; 16px);
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .send-request__button,
+  .send-request__footnote {
+    width: 570px;
+  }
+}
