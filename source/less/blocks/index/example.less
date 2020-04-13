@@ -68,8 +68,7 @@
 }
 
 .example__bar::before {
-  position: absolute;
-  content: "";
+  .pseudo();
   .set-img-size(35px; 6px);
   border-radius: 3px;
   background-color: @green;
@@ -94,8 +93,7 @@
   }
 
   .example::after {
-    position: absolute;
-    content: "";
+    .pseudo();
     height: 462px;
     width: 100%;
     background-color: @grey-f2;

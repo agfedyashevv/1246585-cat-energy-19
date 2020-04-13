@@ -9,19 +9,17 @@
   <body>
     <header class="header header__image">
       <div class="page-wrap">
-        <nav class="nav">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <a class="nav__logo-cat">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
+                <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Кэт энерджи">
               </picture>
             </a>
-
-            <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <button class="nav__toggle" type="button" aria-label="Открыть меню"><span class="nav__burger"></span></button>
           </div>
-
           <div class="nav__wrap">
             <ul class="nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -256,5 +254,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navMain.classList.remove('nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

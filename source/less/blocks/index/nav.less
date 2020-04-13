@@ -3,19 +3,106 @@
   flex-direction: column;
 }
 
-// .nav__wrap {
-//   display: none;
-// }
-
 .nav__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 .nav__logo-cat {
   width: 191px;
+  height: 39px;
   margin-right: 36px;
+}
+
+.nav__toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  .set-img-size(25px; 19px);
+  cursor: pointer;
+}
+
+.nav--closed .nav__burger {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  .set-img-size(100%; 2px);
+  background-color: @black-label;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.nav--closed .nav__burger::before,
+.nav--closed .nav__burger::after {
+  .pseudo();
+  .set-img-size(100%; 2px);
+  background-color: @black-label;
+  top: 0;
+  left: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.nav--closed .nav__burger::before {
+  transform: translate(0, -8px);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.nav--closed .nav__burger::after {
+  transform: translate(0, 8px);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.nav--opened .nav__burger {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  .set-img-size(100%; 2px);
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.nav--opened .nav__burger,
+.nav--opened .nav__burger {
+  &::before,
+  &::after {
+    .pseudo();
+    .set-img-size(24px; 2px);
+    background-color: @black-label;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .nav--closed .site-list {
+    display: none;
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--nojs .site-list {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -31,5 +118,17 @@
   .nav__wrap {
     display: block;
     margin: auto 0;
+  }
+
+  .nav__logo-cat {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__logo-cat {
+    width: 203px;
+    height: 60px;
   }
 }

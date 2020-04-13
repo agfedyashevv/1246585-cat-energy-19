@@ -17,10 +17,8 @@
 }
 
 .program__title::before {
-  position: absolute;
-  content: "";
+  .pseudo();
   background-color: @green;
-  display: block;
   top: 50%;
   left: 0;
   transform: translate(-70px, -50%);
@@ -35,7 +33,9 @@
   font-weight: 400;
   color: @greyish-brown;
   margin: 0;
-  margin-bottom: 44px;
+  border-bottom: 1px solid @grey-d9;
+  padding-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .program__link {
@@ -67,6 +67,7 @@
 
   .program__description {
     .set-font-size(16px; 24px);
+    border: none;
   }
 
   .program__description--reduce {
