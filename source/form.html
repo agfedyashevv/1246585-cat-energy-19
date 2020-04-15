@@ -5,6 +5,32 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: top center;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/cat-energy-form-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/cat-energy-form-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/cat-energy-form-desktop.png" );
+        }
+      }
+    </style>
+    <link href="https://yoksel.github.io/pixel-glass-js/styles.css" rel="stylesheet">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="header">
