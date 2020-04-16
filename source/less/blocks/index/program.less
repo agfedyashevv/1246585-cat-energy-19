@@ -27,6 +27,22 @@
   border-radius: 50%;
 }
 
+.program__title--reduce::after {
+  .pseudo();
+  .set-img-size(35px; 49px);
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+  top: -9px;
+  left: -63px;
+}
+
+.program__title--increase::after {
+  .pseudo();
+  .set-img-size(67px; 28px);
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+  top: 5px;
+  left: -79px;
+}
+
 .program__description {
   font-family: @font-text;
   .set-font-size();
@@ -39,10 +55,27 @@
 }
 
 .program__link {
+  position: relative;
   font-family: @font-title;
   .set-font-size(16px; 16px);
   color: @black;
   .uppercase();
+  padding-right: 12px;
+}
+
+.program__link::after {
+  .pseudo();
+  .set-img-size(39px; 11px);
+  background: url("../img/icon-right-arrow-long.svg") no-repeat left;
+  top: 25%;
+  left: 100%;
+}
+
+.program__link:hover::after {
+  .set-img-size(48px; 11px);
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat left;
+  top: 25%;
+  left: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -65,6 +98,22 @@
     border-radius: 50%;
   }
 
+  .program__title--reduce::after {
+    .pseudo();
+    .set-img-size(141px; 194px);
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: 0;
+    left: 425px;
+  }
+
+  .program__title--increase::after {
+    .pseudo();
+    .set-img-size(268px; 113px);
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: 55px;
+    left: 360px;
+  }
+
   .program__description {
     .set-font-size(16px; 24px);
     border: none;
@@ -80,6 +129,7 @@
 
   .program__link {
     .set-font-size(20px; 20px);
+    padding-right: 25px;
   }
 }
 
@@ -101,6 +151,22 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+  }
+
+  .program__title--reduce::after {
+    .pseudo();
+    .set-img-size(71px; 97px);
+    background: url("../img/icon-cat-slim.svg") no-repeat;
+    top: -35px;
+    left: 15px;
+  }
+
+  .program__title--increase::after {
+    .pseudo();
+    .set-img-size(134; 57px);
+    background: url("../img/icon-cat-pro.svg") no-repeat;
+    top: -7px;
+    left: -20px;
   }
 
   .program__item {

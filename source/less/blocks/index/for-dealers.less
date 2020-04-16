@@ -19,6 +19,11 @@
   color: @greyish-brown;
 }
 
+.for-dealers__street,
+.for-dealers__city {
+  margin: 0;
+}
+
 @media (min-width: @tablet-width) {
   .for-dealers__text,
   .for-dealers__address {
@@ -33,6 +38,10 @@
     .set-font-size(16px; 20px);
     text-align: right;
   }
+
+  .for-dealers__street {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -44,5 +53,9 @@
   .for-dealers__address {
     .set-font-size(16px; 20px);
     text-align: left;
+  }
+
+  .for-dealers__street {
+    margin-bottom: 20px;
   }
 }

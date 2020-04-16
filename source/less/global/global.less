@@ -68,3 +68,8 @@ img {
   display: @display;
   position: @position;
 }
+
+.animation(@transition-timing-function: ease-in-out; @transition-duration: 0.4s) {
+  transition-timing-function: @transition-timing-function;
+  transition-duration: @transition-duration;
+}
