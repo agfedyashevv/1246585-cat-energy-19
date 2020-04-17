@@ -1,6 +1,6 @@
 .example {
   background-color: @grey-f2;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 38px;
 }
 
@@ -10,7 +10,7 @@
   .set-font-size(36px; 60px);
   color: @black;
   .reset-to-zero();
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .example__story {
@@ -19,7 +19,7 @@
   .set-font-size(14px; 18px);
   color: @greyish-brown;
   .reset-to-zero();
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .example__proof {
@@ -81,6 +81,10 @@
   position: relative;
 }
 
+.example__cat-before {
+  .set-img-size(320px; 240px);
+}
+
 .example__cat-after {
   display: none;
 }
@@ -103,7 +107,7 @@
 
   .example__title {
     .set-font-size(60px; 60px);
-    margin-bottom: 56px;
+    margin-bottom: 63px;
   }
 
   .example__story {
@@ -168,11 +172,15 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding-bottom: 75px;
+    padding-bottom: 105px;
   }
 
   .example__title {
-    margin-bottom: 142px;
+    margin-bottom: 146px;
+  }
+
+  .example__story {
+    margin-bottom: 69px;
   }
 
   .example__cost {

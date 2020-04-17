@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 45px;
+}
+
 .advantages__list {
   .reset-to-zero();
   .list-style-none();
@@ -7,11 +11,36 @@
   position: relative;
   font-family: @font-text;
   font-weight: 400;
-  position: relative;
+  padding-top: 3px;
   padding-left: 80px;
   .set-font-size();
   color: @greyish-brown;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+.advantages__item--useful::before,
+.advantages__item--release::before,
+.advantages__item--eat::before,
+.advantages__item--time::before {
+  .pseudo();
+  .set-img-size(50px; 50px);
+  top: 0;
+  left: 0;
+}
+
+.advantages__item- {
+  &-useful::before {
+    background: url("../img/advantage-leaf@1x.png") no-repeat center;
+  }
+  &-release::before {
+    background: url("../img/advantage-powder@1x.png") no-repeat center;
+  }
+  &-eat::before {
+    background: url("../img/advantage-dining@1x.png") no-repeat center;
+  }
+  &-time::before {
+    background: url("../img/advantage-clock@1x.png") no-repeat center;
+  }
 }
 
 .advantages__item::before {
@@ -22,38 +51,13 @@
   left: 0;
 }
 
-.advantages__item--useful::after,
-.advantages__item--release::after,
-.advantages__item--eat::after,
-.advantages__item--time::after {
-  .pseudo();
-  .set-img-size(50px; 50px);
-  top: 5px;
-  left: 5px;
-}
-
-.advantages__item- {
-  &-useful::after {
-    background: url("../img/advantage-leaf@1x.png") no-repeat;
-  }
-  &-release::after {
-    background: url("../img/advantage-powder@1x.png") no-repeat;
-  }
-  &-eat::after {
-    background: url("../img/advantage-dining@1x.png") no-repeat;
-  }
-  &-time::after {
-    background: url("../img/advantage-clock@1x.png") no-repeat;
-  }
-}
-
 .advantages__title {
   font-family: @font-title;
   font-weight: 400;
   color: @black;
   margin: 0;
   .set-font-size(36px; 60px);
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .advantages-item-move {
@@ -75,7 +79,7 @@
 
   .advantages__title {
     .set-font-size(60px; 60px);
-    margin-bottom: 63px;
+    margin-bottom: 71px;
   }
 
   .advantages__list {
@@ -93,7 +97,7 @@
     .set-font-size(16px; 24px);
     margin-bottom: 87px;
     padding-left: 0;
-    padding-top: 117px;
+    padding-top: 112px;
   }
 
   .advantages__item::before {
@@ -108,6 +112,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages__item {
+    margin-bottom: 35px;
+  }
+
   .advantages__list {
     width: auto;
   }

@@ -1,7 +1,13 @@
 .program__item {
   background-color: @grey-f2;
-  padding: 22px 20px;
+  padding-top: 30px;
+  padding-bottom: 19px;
+  .padding-l-r(20px; 20px);
   margin-bottom: 20px;
+}
+
+.program__item:last-child {
+  margin: 0;
 }
 
 .program__title {
@@ -11,8 +17,8 @@
   font-weight: 400;
   color: @black;
   margin: 0;
-  margin-bottom: 36px;
-  margin-left: 72px;
+  margin-bottom: 30px;
+  margin-left: 71px;
   .uppercase();
 }
 
@@ -31,8 +37,8 @@
   .pseudo();
   .set-img-size(35px; 49px);
   background: url("../img/icon-cat-slim.svg") no-repeat;
-  top: -9px;
-  left: -63px;
+  top: -8px;
+  left: -61px;
 }
 
 .program__title--increase::after {
@@ -40,7 +46,7 @@
   .set-img-size(67px; 28px);
   background: url("../img/icon-cat-pro.svg") no-repeat;
   top: 5px;
-  left: -79px;
+  left: -78px;
 }
 
 .program__description {
@@ -50,7 +56,7 @@
   color: @greyish-brown;
   margin: 0;
   border-bottom: 1px solid @grey-d9;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   margin-bottom: 20px;
 }
 
