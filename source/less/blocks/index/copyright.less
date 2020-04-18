@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.copyright__link {
+  display: block;
+  font-family: @font-text;
+  font-weight: 400;
+  .set-font-size(16px; 16px);
+  color: @greyish-brown;
+}
+
+.copyright__logo {
+  display: block;
+  .set-img-size(27px; 34px);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-right: 23px;
+  }
+}

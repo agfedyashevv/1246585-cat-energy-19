@@ -75,11 +75,13 @@
 @media (min-width: @tablet-width) {
   .advantages {
     border-bottom: 1px solid @grey-e6;
+    padding-bottom: 10px;
+    margin-bottom: 43px;
   }
 
   .advantages__title {
     .set-font-size(60px; 60px);
-    margin-bottom: 71px;
+    margin-bottom: 29px;
   }
 
   .advantages__list {
@@ -95,7 +97,8 @@
     width: 245px;
     min-height: 230px;
     .set-font-size(16px; 24px);
-    margin-bottom: 87px;
+    margin-top: 43px;
+    margin-bottom: 45px;
     padding-left: 0;
     padding-top: 112px;
   }
@@ -106,6 +109,7 @@
 
   .advantages__item::after {
     .advantages-item-move();
+    left: -3px;
     counter-increment: myCounter;
     content: counter(myCounter);
   }
@@ -113,6 +117,7 @@
 
 @media (min-width: @desktop-width) {
   .advantages__item {
+    padding-top: 113px;
     margin-bottom: 35px;
   }
 

@@ -86,19 +86,20 @@
 
 @media (min-width: @tablet-width) {
   .program__item {
-    padding: 81px 52px 62px 52px;
+    padding: 76px 52px 60px 52px;
     margin-bottom: 30px;
   }
 
   .program__title {
     .set-font-size(36px; 37px);
     margin-left: 0;
+    margin-bottom: 25px;
   }
 
   .program__title::before {
     top: 0;
     right: 0;
-    transform: translate(394px, 11px);
+    transform: translate(394px, 16px);
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -108,7 +109,7 @@
     .pseudo();
     .set-img-size(141px; 194px);
     background: url("../img/icon-cat-slim.svg") no-repeat;
-    top: 0;
+    top: 3px;
     left: 425px;
   }
 
@@ -116,13 +117,14 @@
     .pseudo();
     .set-img-size(268px; 113px);
     background: url("../img/icon-cat-pro.svg") no-repeat;
-    top: 55px;
+    top: 58px;
     left: 360px;
   }
 
   .program__description {
     .set-font-size(16px; 24px);
     border: none;
+    margin-bottom: 35px;
   }
 
   .program__description--reduce {
@@ -147,7 +149,8 @@
   }
 
   .program__title {
-    padding-left: 164px;
+    padding-left: 162px;
+    margin-bottom: 75px;
   }
 
   .program__title::before {
@@ -176,8 +179,13 @@
   }
 
   .program__item {
+    margin: 0;
     width: 570px;
-    padding: 81px 56px 62px 52px;
+    padding: 76px 56px 59px 52px;
+  }
+
+  .program__description {
+    margin-bottom: 10px;
   }
 
   .program__description--reduce {
