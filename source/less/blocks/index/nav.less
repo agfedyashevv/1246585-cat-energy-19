@@ -47,12 +47,10 @@
 
 .nav--closed .nav__burger::before {
   transform: translate(0, -8px);
-  .animation();
 }
 
 .nav--closed .nav__burger::after {
   transform: translate(0, 8px);
-  .animation();
 }
 
 .nav--opened .nav__burger {
@@ -64,10 +62,7 @@
   background-color: transparent;
   transform: translate(-50%, -50%);
   .animation();
-}
 
-.nav--opened .nav__burger,
-.nav--opened .nav__burger {
   &::before,
   &::after {
     .pseudo();
