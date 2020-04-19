@@ -5,30 +5,54 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: top center;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/cat-energy-catalog-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/cat-energy-catalog-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/cat-energy-catalog-desktop.png" );
+        }
+      }
+    </style>
+    <link href="https://yoksel.github.io/pixel-glass-js/styles.css" rel="stylesheet">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="header">
       <div class="page-wrap">
-        <nav class="nav">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <a class="nav__logo-cat" href="index.html">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
+                <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Кэт энерджи">
               </picture>
             </a>
-
-            <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <button class="nav__toggle" type="button" aria-label="Открыть меню"><span class="nav__burger"></span></button>
           </div>
-
           <div class="nav__wrap">
             <ul class="nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link site-list__link--black">Каталог продукции</a>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active site-list__link--black">Каталог продукции</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--black" href="form.html">Подбор программы</a>
@@ -46,9 +70,13 @@
           <ul class="catalog__list product">
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--chicken-500">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 500 грамм со вкусом курицы">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/chicken-small-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png">
+                      <img class="product__pict" src="../img/chicken-small-mobile@1x.jpg" alt="Изображение банки с едой объемом 500 грамм со вкусом курицы">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -75,9 +103,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--chicken-1000">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 1000 грамм со вкусом курицы">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/chicken-big-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/chicken-big-tablet@1x.png">
+                      <img class="product__pict" src="../img/chicken-big-mobile@1x.jpg" alt="Изображение банки с едой объемом 1000 грамм со вкусом курицы">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -104,9 +136,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--fish-500">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 500 грамм со вкусом рыбы">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/fish-small-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/fish-small-tablet@1x.png">
+                      <img class="product__pict" src="../img/fish-small-mobile@1x.jpg" alt="Изображение банки с едой объемом 500 грамм со вкусом рыбы">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -133,9 +169,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--fish-1000">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 1000 грамм со вкусом рыбы">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/fish-big-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/fish-big-tablet@1x.png">
+                      <img class="product__pict" src="../img/fish-big-mobile@1x.jpg" alt="Изображение банки с едой объемом 1000 грамм со вкусом рыбы">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -162,9 +202,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--buckwheat-500">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 500 грамм со вкусом гречки">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/buckwheat-small-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/buckwheat-small-tablet@1x.png">
+                      <img class="product__pict" src="../img/buckwheat-small-mobile@1x.jpg" alt="Изображение банки с едой объемом 500 грамм со вкусом гречки">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -191,9 +235,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--buckwheat-1000">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 1000 грамм со вкусом гречки">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/buckwheat-big-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/buckwheat-big-tablet@1x.png">
+                      <img class="product__pict" src="../img/buckwheat-big-mobile@1x.jpg" alt="Изображение банки с едой объемом 1000 грамм со вкусом гречки">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -220,9 +268,13 @@
             </li>
             <li class="product__item">
               <div class="product__inner">
-                <div class="product__image product__image--rice-500">
-                  <a href="#">
-                    <img class="product__pict" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Изображение банки с едой объемом 500 грамм со вкусом риса">
+                <div class="product__image">
+                  <a href="#" class="product__can">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="../img/rice-small-desktop@1x.png">
+                      <source media="(min-width: 768px)" srcset="../img/rice-small-tablet@1x.png">
+                      <img class="product__pict" src="../img/rice-small-mobile@1x.jpg" alt="Изображение банки с едой объемом 500 грамм со вкусом риса">
+                    </picture>
                   </a>
                 </div>
                 <div class="product__info">
@@ -343,16 +395,28 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__map-block footer__map-block--grey">
+      <div class="footer__map-block">
         <h2 class="visually-hidden">Информация для дилеров и карта с местоположением интернет-магазина</h2>
-        <div class="footer__box page-wrap">
-          <div class="footer__for-dealers for-dealers">
-            <p class="for-dealers__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <p class="for-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="footer__custom footer__custom--grey">
+          <div class="footer__box page-wrap">
+            <div class="footer__for-dealers for-dealers">
+              <p class="for-dealers__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+              <div class="for-dealers__address">
+                <p class="for-dealers__street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="for-dealers__city">Санкт-Петербург</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта с местоположением интернет-магазина">
+          <div class="footer__iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258681!2d30.32085335195932!3d59.93871648178732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587074021815!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="footer__location">
+            <div class="footer__location-pin">
+              <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта с местоположением интернет-магазина">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -443,7 +507,7 @@
           </div>
           <div class="footer__copyright copyright">
             <div class="copyright__text">
-              <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </div>
             <div class="copyright__logo">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -456,5 +520,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navMain.classList.remove('nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

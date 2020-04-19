@@ -5,10 +5,13 @@
 
 .site-list__item {
   text-align: center;
-  padding: 24px 0;
+  padding-top: 22px;
+  padding-bottom: 21px;
   color: @black;
   .uppercase();
   border-top: 1px solid @grey-e6;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .site-list__item:last-child {
@@ -36,7 +39,9 @@
   }
 
   .site-list__item {
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    margin: 0;
   }
 
   .site-list__item,
@@ -45,7 +50,12 @@
   }
 
   .site-list__item:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 35px;
+  }
+
+  .site-list__link--active {
+    padding-bottom: 7px;
+    border-bottom: 2px solid @green;
   }
 }
 
@@ -54,6 +64,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 5px;
   }
 
   .site-list__link {
@@ -76,6 +87,10 @@
   }
 
   .site-list__item:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 35px;
+  }
+
+  .header__image .site-list__link--active {
+    border-color: @white;
   }
 }

@@ -3,11 +3,30 @@
   .reset-to-zero;
 }
 
+.proof__item {
+  position: relative;
+  width: 124px;
+  text-align: center;
+  border: 1px solid @grey-cd;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 7px;
+}
+
 .proof__text {
   font-family: @font-text;
   font-weight: 400;
   .set-font-size(12px; 12px);
   color: @greyish-brown;
+  position: absolute;
+  display: block;
+  padding-left: 3%;
+  padding-right: 3%;
+  top: 46px;
+  left: 50%;
+  width: 87px;
+  transform: translateX(-50%);
+  background-color: @grey-f2;
 }
 
 .proof__title {
@@ -24,13 +43,6 @@
   justify-content: space-between;
 }
 
-.proof__item {
-  width: 124px;
-  text-align: center;
-  border: 1px solid @grey-cd;
-  padding-top: 15px;
-}
-
 @media (min-width: @tablet-width) {
   .proof {
     width: 366px;
@@ -38,13 +50,19 @@
 
   .proof__item {
     width: 162px;
+    padding-top: 14px;
+    padding-bottom: 9px;
   }
 
   .proof__title {
     .set-font-size(30px; 37px);
+    margin-bottom: 10px;
   }
 
   .proof__text {
     .set-font-size(14px; 14px);
+    .padding-l-r(8px; 8px);
+    top: 61px;
+    background-color: @white;
   }
 }

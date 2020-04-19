@@ -1,6 +1,6 @@
 .example {
   background-color: @grey-f2;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 38px;
 }
 
@@ -10,7 +10,7 @@
   .set-font-size(36px; 60px);
   color: @black;
   .reset-to-zero();
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .example__story {
@@ -19,11 +19,11 @@
   .set-font-size(14px; 18px);
   color: @greyish-brown;
   .reset-to-zero();
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .example__proof {
-  margin-bottom: 22px;
+  margin-bottom: 35px;
 }
 
 .example__spending {
@@ -34,7 +34,7 @@
   text-align: center;
   .uppercase();
   .reset-to-zero();
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .example__photos {
@@ -68,8 +68,7 @@
 }
 
 .example__bar::before {
-  position: absolute;
-  content: "";
+  .pseudo();
   .set-img-size(35px; 6px);
   border-radius: 3px;
   background-color: @green;
@@ -82,6 +81,10 @@
   position: relative;
 }
 
+.example__cat-before {
+  .set-img-size(320px; 240px);
+}
+
 .example__cat-after {
   display: none;
 }
@@ -89,13 +92,12 @@
 @media (min-width: @tablet-width) {
   .example {
     position: relative;
-    padding-top: 45px;
+    padding-top: 0;
     background-color: transparent;
   }
 
   .example::after {
-    position: absolute;
-    content: "";
+    .pseudo();
     height: 462px;
     width: 100%;
     background-color: @grey-f2;
@@ -105,19 +107,19 @@
 
   .example__title {
     .set-font-size(60px; 60px);
-    margin-bottom: 56px;
+    margin-bottom: 64px;
   }
 
   .example__story {
     .set-font-size(16px; 24px);
-    margin-bottom: 56px;
+    margin-bottom: 53px;
   }
 
   .example__flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 122px;
   }
 
   .example__spending {
@@ -125,6 +127,11 @@
     .set-font-size(20px; 20px);
     text-align: right;
     margin: 0;
+  }
+
+  .example__cost {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .example__proof {
@@ -137,11 +144,12 @@
 
   .example__buttons {
     justify-content: space-between;
-    .padding-l-r(28px; 28px);
+    .padding-l-r(69px; 69px);
   }
 
   .example__button {
     .set-font-size(20px; 20px);
+    padding: 0;
   }
 
   .example__bar {
@@ -169,14 +177,19 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding-bottom: 75px;
+    padding-bottom: 105px;
   }
 
   .example__title {
-    margin-bottom: 142px;
+    margin-bottom: 146px;
+  }
+
+  .example__story {
+    margin-bottom: 69px;
   }
 
   .example__cost {
+    display: inline-block;
     margin-right: 60px;
   }
 
