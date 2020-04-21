@@ -1,6 +1,10 @@
 .pick-info {
-  padding-top: 18px;
-  padding-bottom: 34px;
+  padding-top: 15px;
+  padding-bottom: 32px;
+}
+
+.pick-info__form {
+  margin-left: -1px;
 }
 
 .pick-info__title {
@@ -9,7 +13,7 @@
   .set-font-size(36px; 60px);
   color: @black;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .pick-info__text {
@@ -19,18 +23,23 @@
   color: @black;
   .uppercase();
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: @tablet-width) {
+  .pick-info {
+    padding-top: 18px;
+    padding-bottom: 34px;
+  }
+
   .pick-info__title {
     .set-font-size(60px; 60px);
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .pick-info__text {
     .set-font-size(20px; 30px);
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 }
 
