@@ -1,7 +1,7 @@
 .example {
   background-color: @grey-f2;
   padding-top: 16px;
-  padding-bottom: 38px;
+  padding-bottom: 34px;
 }
 
 .example__title {
@@ -34,17 +34,20 @@
   text-align: center;
   .uppercase();
   .reset-to-zero();
-  margin-bottom: 23px;
+  margin-bottom: 32px;
 }
 
 .example__photos {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .example__buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  .padding-l-r(38px; 32px);
 }
 
 .example__button {
@@ -63,8 +66,6 @@
   .set-img-size(84px; 14px);
   border: 1px solid @grey-cd;
   border-radius: 6px;
-  margin-left: 19px;
-  margin-right: 19px;
 }
 
 .example__bar::before {
@@ -91,6 +92,7 @@
 
 @media (min-width: @tablet-width) {
   .example {
+    min-height: 1100px;
     position: relative;
     padding-top: 0;
     background-color: transparent;
@@ -119,7 +121,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 122px;
+    margin-bottom: 622px;
   }
 
   .example__spending {
@@ -138,13 +140,17 @@
     margin-bottom: 0;
   }
 
+  .example__target {
+    padding-left: 16px;
+  }
+
   .example__cat-before {
-    .set-img-size(auto; 499px);
+    .set-img-size(auto; 517px);
   }
 
   .example__buttons {
     justify-content: space-between;
-    .padding-l-r(69px; 69px);
+    .padding-l-r(53px; 67px);
   }
 
   .example__button {
@@ -172,6 +178,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15), inset 0px 0px 0px 1px @grey-cd;
+    cursor: pointer;
+  }
+
+  .example__tog::before {
+    .pseudo();
+    .set-img-size(8px; 8px);
+    background-color: @green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .example__photos {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .example__cat-before,
+  .example__cat-after {
+    .pseudo();
+    left: 0;
+    bottom: 17px;
   }
 }
 

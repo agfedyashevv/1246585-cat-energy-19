@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-position: top center;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "img/cat-energy-index-mobile.png" );
+        background-image: url( "img/cat-energy-index-mobile-menu.png" );
       }
       /* Планшет */
       @media ( min-width: 768px ) {
@@ -73,7 +73,9 @@
             <p class="select-program__slogan">Занялся собой? Займись котом!</p>
             <div class="select-program__image">
               <picture>
-                <img class="select-program__image-move" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Изображение банки с едой для кота">
+                <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+                <img class="select-program__image-move" src="img/index-can-mobile@1x.png" alt="Изображение банки с едой для кота">
               </picture>
             </div>
             <a href="form.html" class="select-program__button button">Подобрать программу</a>
@@ -147,12 +149,16 @@
             </div>
             <div class="example__target slider">
               <div class="example__photos slider__list">
-                <div class="example__photo slider__item">
-                  <img class="example__cat-before" src="img/before-mobile@1x.png" width="320" height="240" alt="Изображение кота до начала питания по программе">
-                </div>
-                <div class="example__photo slider__item">
-                  <img class="example__cat-after" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Изображение кота, питающегося по программе">
-                </div>
+                <picture class="example__photo slider__item">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                  <img class="example__cat-before" src="img/before-mobile@1x.png" alt="Изображение худого кота, питающегося по программе">
+                </picture>
+                <picture class="example__photo slider__item">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                  <img class="example__cat-after" src="img/after-mobile@1x.png" alt="Изображение толстого кота до начала питания по программе">
+                </picture>
               </div>
               <div class="example__buttons">
                 <button type="button" class="example__button example__button--before">Было</button>

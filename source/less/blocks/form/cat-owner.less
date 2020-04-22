@@ -34,17 +34,15 @@
 
 .cat-owner__icon-mail {
   position: absolute;
-  top: 50%;
+  top: 15px;
   right: 15px;
-  transform: translateY(-50%);
   .set-img-size(18px; 14px);
 }
 
 .cat-owner__icon-phone {
   position: absolute;
-  top: 50%;
+  top: 13px;
   right: 12px;
-  transform: translateY(-50%);
   .set-img-size(21px; 21px);
 }
 
@@ -59,11 +57,30 @@
     margin-left: 18px;
     padding-left: 20px;
     .set-font-size(20px; 20px);
+    height: 52px;
   }
 
   .cat-owner__label {
     margin-bottom: 20px;
     .set-font-size(20px; 20px);
+  }
+
+  .cat-owner__label:first-child {
+    padding-left: 2px;
+  }
+
+  .cat-owner__input[type="tel"]  {
+    margin-left: 15px;
+  }
+
+  .cat-owner__icon-mail {
+    top: 20px;
+    right: 19px;
+  }
+
+  .cat-owner__icon-phone {
+    top: 18px;
+    right: 16px;
   }
 }
 
@@ -75,6 +92,15 @@
   }
 
   .cat-owner__label {
-    width: 570px;
+    width: 572px;
+  }
+
+  .cat-owner__icon-mail {
+    top: 21px;
+    right: 21px;
+  }
+
+  .cat-owner__icon-phone {
+    right: 19px;
   }
 }
