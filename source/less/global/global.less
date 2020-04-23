@@ -73,3 +73,12 @@ img {
   transition-timing-function: @transition-timing-function;
   transition-duration: @transition-duration;
 }
+
+.green-line-set(@top: 14px) {
+  .pseudo();
+  background-color: @green;
+  .set-img-size(100%; 3px);
+  left: 0;
+  top: @top;
+  z-index: -1;
+}
