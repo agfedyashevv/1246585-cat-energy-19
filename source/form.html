@@ -110,7 +110,7 @@
           <div class="cat-owner__green-line">
             <div class="page-wrap">
               <h2 class="cat-owner__title"><span class="cat-owner__text">Контактные данные (владельца кота)</span></h2>
-              <fieldset class="form__cat-owner cat-owner">
+              <fieldset class="form__cat-owner cat-owner form-wrapper">
                 <div class="cat-owner__flex">
                   <label class="cat-owner__label">E-mail:*
                     <input class="cat-owner__input" type="email" name="email" id="id-email" placeholder="kuklachev@gmail.com" required>
@@ -128,7 +128,6 @@
                       C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
                       C7.8,20,8.1,19.7,8.1,19.4z"/>
                     </svg>
-
                   </label>
                 </div>
               </fieldset>
@@ -137,8 +136,8 @@
 
           <div class="comment__green-line">
             <div class="page-wrap">
-            <h2 class="comment__title"><span class="comment__text">Комментарий</span></h2>
-              <fieldset class="form__comment comment">
+              <h2 class="comment__title"><span class="comment__text">Комментарий</span></h2>
+              <fieldset class="form__comment comment form-wrapper">
                 <label>
                   <textarea class="comment__textarea" name="comment" id="id-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </label>
@@ -146,33 +145,37 @@
             </div>
           </div>
 
-          <div class="form-wrapper">
-            <fieldset class="form__extra extra">
-              <legend class="extra__title">Дополнительно</legend>
-              <ul class="extra__list">
-                <li class="extra__item">
-                  <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-substitute" id="id-sugar-substitute" checked>
-                  <label class="extra__label" for="id-sugar-substitute">Сахарозаменитель</label>
-                </li>
-                <li class="extra__item">
-                  <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-water" id="id-water">
-                  <label class="extra__label" for="id-water">Питьевая вода</label>
-                </li>
-                <li class="extra__item">
-                  <input class="visually-hidden extra__input-checkbox" type="checkbox" name="milk" id="id-milk">
-                  <label class="extra__label" for="id-milk">Молоко</label>
-                </li>
-                <li class="extra__item">
-                  <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-vitamins" id="id-vitamins">
-                  <label class="extra__label" for="id-vitamins">Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
+          <div class="extra__green-line">
+            <div class="page-wrap">
+              <h2 class="extra__title"><span class="extra__text">Дополнительно</span></h2>
+              <fieldset class="form__extra extra form-wrapper">
+                <ul class="extra__list">
+                  <li class="extra__item">
+                    <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-substitute" id="id-sugar-substitute" checked>
+                    <label class="extra__label" for="id-sugar-substitute">Сахарозаменитель</label>
+                  </li>
+                  <li class="extra__item">
+                    <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-water" id="id-water">
+                    <label class="extra__label" for="id-water">Питьевая вода</label>
+                  </li>
+                  <li class="extra__item">
+                    <input class="visually-hidden extra__input-checkbox" type="checkbox" name="milk" id="id-milk">
+                    <label class="extra__label" for="id-milk">Молоко</label>
+                  </li>
+                  <li class="extra__item">
+                    <input class="visually-hidden extra__input-checkbox" type="checkbox" name="sugar-vitamins" id="id-vitamins">
+                    <label class="extra__label" for="id-vitamins">Витамины</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
           </div>
 
-          <div class="form__send-request send-request form-wrapper">
-            <button type="submit" class="send-request__button button">Отправить заявку</button>
-            <p class="send-request__footnote">* — Обязательные поля</p>
+          <div class="page-wrap">
+            <div class="form__send-request send-request form-wrapper">
+              <button type="submit" class="send-request__button button">Отправить заявку</button>
+              <p class="send-request__footnote">* — Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>
