@@ -3,11 +3,14 @@
 }
 
 .extra__title {
+  display: inline-block;
   font-family: @font-title;
   font-weight: 400;
   color: @black;
   .set-font-size(24px; 24px);
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: -20px;
+  margin-bottom: 36px;
 }
 
 .extra__list {
@@ -16,29 +19,105 @@
 }
 
 .extra__item {
+  position: relative;
   font-family: @font-title;
   font-weight: 400;
   color: @black-label;
   .set-font-size(16px; 18px);
   .uppercase();
-  margin-bottom: 28px;
+  margin-bottom: 24px;
+}
+
+.extra__item::before {
+  .pseudo();
+  border: 1px solid @grey-cd;
+  .set-img-size(30px; 30px);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.extra__label {
+  position: relative;
+  .padding-l-r(46px; 5px);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.extra__input-checkbox:checked + .extra__label::before {
+  .pseudo();
+  background: url("../img/icon-tick.svg");
+  .set-img-size(22px; 17px);
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+.extra__text {
+  margin: 0 auto;
+  display: block;
+  background-color: @white;
+  .padding-l-r(20px; 22px);
+}
+
+.extra__green-line {
+  position: relative;
+
+  &::before {
+    .green-line-set();
+  }
 }
 
 @media (min-width: @tablet-width) {
   .extra__title {
     .set-font-size(36px; 36px);
-    margin-bottom: 53px;
+    margin-bottom: 63px;
+    margin-left: -30px;
+    padding-left: 30px;
+  }
+
+  .extra__text {
+    .padding-l-r(39px; 42px);
+  }
+
+  .extra__green-line::before {
+    .green-line-set(22px);
   }
 
   .extra__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-right: 3px;
   }
 
   .extra__item {
     .set-font-size(20px; 20px);
     width: 285px;
     margin-bottom: 52px;
+  }
+
+  .extra__item::before {
+    .set-img-size(40px; 40px);
+  }
+
+  .extra__input-checkbox:checked + .extra__label::before {
+    left: 10px;
+  }
+
+  .extra__label {
+    padding-left: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__item {
+    width: 243px;
+  }
+
+  .extra__title {
+    margin-left: -40px;
+    padding-left: 0;
   }
 }

@@ -1,13 +1,19 @@
 .cat-owner__title {
+  display: inline-block;
+  margin: 0;
   font-family: @font-title;
   font-weight: 400;
   color: @black;
   .set-font-size(24px; 24px);
   padding-top: 20px;
   margin-bottom: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+  .padding-l-r(0; 96px);
 }
 
 .cat-owner__label {
+  position: relative;
   display: flex;
   align-items: center;
   font-family: @font-title;
@@ -26,15 +32,47 @@
   .uppercase();
   margin-left: 12px;
   min-height: 45px;
-  padding-left: 16px;
+  .padding-l-r(14px; 46px);
   border: 1px solid @grey-e6;
   flex-grow: 1;
+}
+
+.cat-owner__icon-mail {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  .set-img-size(18px; 14px);
+}
+
+.cat-owner__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  .set-img-size(21px; 21px);
+}
+
+.cat-owner__text {
+  margin: 0 auto;
+  display: block;
+  background-color: @white;
+  .padding-l-r(20px; 22px);
+}
+
+.cat-owner__green-line {
+  position: relative;
+
+  &::before {
+    .green-line-set(34px);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .cat-owner__title {
     .set-font-size(36px; 36px);
     margin-bottom: 70px;
+    margin-left: -30px;
+    margin-right: 0;
+    .padding-l-r(51px; 0);
     padding-top: 0;
   }
 
@@ -42,15 +80,57 @@
     margin-left: 18px;
     padding-left: 20px;
     .set-font-size(20px; 20px);
+    height: 52px;
   }
 
   .cat-owner__label {
     margin-bottom: 20px;
     .set-font-size(20px; 20px);
   }
+
+  .cat-owner__label:first-child {
+    padding-left: 2px;
+  }
+
+  .cat-owner__input[type="tel"] {
+    margin-left: 15px;
+  }
+
+  .cat-owner__icon-mail {
+    top: 20px;
+    right: 19px;
+  }
+
+  .cat-owner__icon-phone {
+    top: 18px;
+    right: 16px;
+  }
+
+  .cat-owner__text {
+    display: block;
+    background-color: @white;
+    .padding-l-r(39px; 42px);
+    margin-left: -20px;
+  }
+
+  .cat-owner__green-line::before {
+    .green-line-set(22px);
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .cat-owner__title {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cat-owner__text {
+    padding-right: 42px;
+    margin-left: -40px;
+    margin-right: 667px;
+  }
+
   .cat-owner__flex {
     display: flex;
     justify-content: space-between;
@@ -58,6 +138,24 @@
   }
 
   .cat-owner__label {
-    width: 570px;
+    width: 572px;
+  }
+
+  .cat-owner__icon-mail {
+    top: 21px;
+    right: 21px;
+  }
+
+  .cat-owner__icon-phone {
+    right: 19px;
+  }
+
+  .cat-owner__input {
+    margin-left: 21px;
+    .padding-l-r(18px; 57px);
+  }
+
+  .cat-owner__input[type="tel"] {
+    margin-left: 17px;
   }
 }

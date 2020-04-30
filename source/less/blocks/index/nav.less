@@ -7,7 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .padding-l-r();
   padding-bottom: 15px;
+  border-bottom: 1px solid @grey-e6;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .nav__logo-cat {
@@ -20,8 +24,9 @@
   position: relative;
   border: none;
   background-color: transparent;
-  .set-img-size(25px; 19px);
+  .set-img-size(35px; 30px);
   cursor: pointer;
+  margin-right: -5px;
 }
 
 .nav--closed .nav__burger {
@@ -29,7 +34,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  .set-img-size(100%; 2px);
+  .set-img-size(70%; 2px);
   background-color: @black-label;
   transform: translate(-50%, -50%);
   .animation();
@@ -58,7 +63,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  .set-img-size(100%; 2px);
+  .set-img-size(70%; 2px);
   background-color: transparent;
   transform: translate(-50%, -50%);
   .animation();
@@ -103,6 +108,8 @@
 
   .nav__wrapper {
     padding: 0;
+    border: none;
+    margin: 0;
   }
 
   .nav__toggle {
