@@ -14,6 +14,11 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: @green-under-cat url("../img/index-background-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
 }
 
 .select-program__title,
@@ -46,6 +51,7 @@
 
 .select-program__button {
   .set-font-size();
+  min-height: 40px;
 }
 
 @media (min-width: @tablet-width) {
