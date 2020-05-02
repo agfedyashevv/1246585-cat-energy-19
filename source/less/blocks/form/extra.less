@@ -19,7 +19,6 @@
 }
 
 .extra__item {
-  position: relative;
   font-family: @font-title;
   font-weight: 400;
   color: @black-label;
@@ -28,7 +27,24 @@
   margin-bottom: 24px;
 }
 
-.extra__item::before {
+.extra__label {
+  position: relative;
+  .padding-l-r(46px; 5px);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: @grey-ba;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.extra__label::before {
   .pseudo();
   border: 1px solid @grey-cd;
   .set-img-size(30px; 30px);
@@ -37,15 +53,12 @@
   transform: translateY(-50%);
 }
 
-.extra__label {
-  position: relative;
-  .padding-l-r(46px; 5px);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  cursor: pointer;
+.extra__input-checkbox:focus + .extra__label {
+  outline: 2px solid @outline-color;
+  outline-offset: 3px;
 }
 
-.extra__input-checkbox:checked + .extra__label::before {
+.extra__input-checkbox:checked + .extra__label::after {
   .pseudo();
   background: url("../img/icon-tick.svg");
   .set-img-size(22px; 17px);
@@ -98,11 +111,11 @@
     margin-bottom: 52px;
   }
 
-  .extra__item::before {
+  .extra__label::before {
     .set-img-size(40px; 40px);
   }
 
-  .extra__input-checkbox:checked + .extra__label::before {
+  .extra__input-checkbox:checked + .extra__label::after {
     left: 10px;
   }
 
