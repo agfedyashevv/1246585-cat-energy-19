@@ -24,5 +24,10 @@
     z-index: -1;
     top: 0;
     right: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: @green-under-cat url("../img/index-background-desktop@2x.jpg") no-repeat top left;
+      background-size: cover;
+    }
   }
 }

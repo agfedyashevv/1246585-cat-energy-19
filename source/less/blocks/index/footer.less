@@ -21,7 +21,6 @@
 
 .footer__map {
   position: relative;
-  background-color: @under-map-color;
   height: 362px;
   text-align: center;
   z-index: 1;
@@ -65,6 +64,10 @@
   height: 106px;
   transform: scale(0.5);
   bottom: 100%;
+}
+
+.footer__map-image {
+  .set-img-size(320px; 400px);
 }
 
 .footer__custom--grey {
@@ -128,7 +131,17 @@
   }
 
   .footer__location-pin {
-    margin-top: 0;
+    .set-img-size(767px; 400px);
+    margin-top: -5px;
+  }
+
+  .footer__location-pin::after {
+    left: 322px;
+    transform: scale(1);
+  }
+
+  .footer__map-image {
+    .set-img-size(767px; 400px);
   }
 }
 
@@ -154,5 +167,19 @@
   .footer__inner {
     padding-top: 59px;
     padding-bottom: 59px;
+  }
+
+  .footer__location-pin {
+    .set-img-size(1300px; 400px);
+    margin-top: 0;
+  }
+
+  .footer__location-pin::after {
+    left: 895px;
+    transform: scale(1);
+  }
+
+  .footer__map-image {
+    .set-img-size(1440px; 400px);
   }
 }
