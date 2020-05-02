@@ -78,11 +78,16 @@
   left: 100%;
 }
 
-.program__link:hover::after {
+.program__link:hover::after,
+.program__link:focus::after {
   .set-img-size(48px; 11px);
   background: url("../img/icon-right-arrow-verylong.svg") no-repeat left;
   top: 25%;
   left: 100%;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
