@@ -11,20 +11,20 @@
         background-repeat: no-repeat;
         background-position: top center;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "img/cat-energy-index-mobile-menu.png" );
+        background-image: url( "img/cat-energy-index-mobile-menu.png");
       }
       /* Планшет */
       @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "img/cat-energy-index-tablet.png" );
+          background-image: url( "img/cat-energy-index-tablet.png");
         }
       }
       /* Десктоп */
       @media ( min-width: 1300px ) {
         HTML {
           /* Десктопный макет */
-          background-image: url( "img/cat-energy-index-desktop.png" );
+          background-image: url( "img/cat-energy-index-desktop.png");
         }
       }
     </style>
@@ -49,7 +49,7 @@
           <div class="nav__wrap">
             <ul class="nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Главная</a>
+                <a class="site-list__link site-list__link--active"><span class="site-list__light-menu">Главная</span></a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -148,33 +148,39 @@
               </div>
             </div>
             <div class="example__target slider">
-              <div class="slider__list">
-                <div class="slider__photo slider__photo--before">
-                  <div class="slider__photo-wrap slider__photo-wrap--before">
-                    <picture>
-                      <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                      <img class="slider__cat-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение толстого кота до начала питания по программе">
-                    </picture>
+              <input type="radio" class="visually-hidden slider__btn-1" id="id-btn-1" name="slider__input" checked>
+              <input type="radio" class="visually-hidden slider__btn-2" id="id-btn-2" name="slider__input">
+              <div class="slider__block">
+                <div class="slider__buttons">
+                  <label class="slider__button slider__button--before" for="id-btn-1">Было</label>
+                  <div class="slider__toggle">
+                    <div class="slider__bar"></div>
+                    <button type="button" class="slider__tog"></button>
+                  </div>
+                  <label class="slider__button slider__button--after" for="id-btn-2">Стало</label>
+                </div>
+                <div class="slider__list">
+                  <div class="slider__slides">
+                    <div class="slider__photo slider__photo--before">
+                      <div class="slider__photo-wrap slider__photo-wrap--before">
+                        <picture>
+                          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                          <img class="slider__cat-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение толстого кота до начала питания по программе">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="slider__photo slider__photo--after">
+                      <div class="slider__photo-wrap slider__photo-wrap--after">
+                        <picture>
+                          <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                          <img class="slider__cat-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение худого кота, питающегося по программе">
+                        </picture>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="slider__photo slider__photo--after">
-                  <div class="slider__photo-wrap slider__photo-wrap--after">
-                    <picture>
-                      <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                      <img class="slider__cat-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение худого кота, питающегося по программе">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__buttons">
-                <button type="button" class="slider__button slider__button--before">Было</button>
-                <div class="slider__toggle">
-                  <div class="slider__bar"></div>
-                  <div class="slider__tog"></div>
-                </div>
-                <button type="button" class="slider__button slider__button--after">Стало</button>
               </div>
             </div>
           </div>
@@ -249,7 +255,7 @@
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Вконтакте">
+                <a class="social__link" href="#" aria-label="Наш Вконтакте">
                   <svg class="social__vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve" width="22" height="12">
                     <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -269,22 +275,19 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Инстраграм">
+                <a class="social__link" href="#" aria-label="Наш Инстраграм">
                   <svg class="social__insta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 17 17" style="enable-background:new 0 0 17 17;" xml:space="preserve" width="17" height="17">
-                    <style type="text/css">
-                      .st0{fill:#231F20;}
-                    </style>
-                    <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                    <path d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
                       M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
-                    <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+                    <path d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
                       s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-                    <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+                    <circle cx="12.3" cy="3.7" r="0.9"/>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" aria-label="Фейсбук">
+                <a class="social__link" href="#" aria-label="Наш Фейсбук">
                   <svg class="social__fb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve" width="10" height="19">
                     <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
@@ -301,7 +304,7 @@
             </div>
             <div class="copyright__logo">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
+                <svg class="copyright__htmlacademy-svg" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
                   <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
                 </svg>
               </a>
