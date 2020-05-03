@@ -148,33 +148,39 @@
               </div>
             </div>
             <div class="example__target slider">
-              <div class="slider__list">
-                <div class="slider__photo slider__photo--before">
-                  <div class="slider__photo-wrap slider__photo-wrap--before">
-                    <picture>
-                      <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                      <img class="slider__cat-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение толстого кота до начала питания по программе">
-                    </picture>
+              <input type="radio" class="visually-hidden slider__btn-1" id="id-btn-1" name="slider__input" checked>
+              <input type="radio" class="visually-hidden slider__btn-2" id="id-btn-2" name="slider__input">
+              <div class="slider__block">
+                <div class="slider__buttons">
+                  <label class="slider__button slider__button--before" for="id-btn-1">Было</label>
+                  <div class="slider__toggle">
+                    <div class="slider__bar"></div>
+                    <button type="button" class="slider__tog"></button>
+                  </div>
+                  <label class="slider__button slider__button--after" for="id-btn-2">Стало</label>
+                </div>
+                <div class="slider__list">
+                  <div class="slider__slides">
+                    <div class="slider__photo slider__photo--before">
+                      <div class="slider__photo-wrap slider__photo-wrap--before">
+                        <picture>
+                          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                          <img class="slider__cat-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение толстого кота до начала питания по программе">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="slider__photo slider__photo--after">
+                      <div class="slider__photo-wrap slider__photo-wrap--after">
+                        <picture>
+                          <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                          <img class="slider__cat-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение худого кота, питающегося по программе">
+                        </picture>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="slider__photo slider__photo--after">
-                  <div class="slider__photo-wrap slider__photo-wrap--after">
-                    <picture>
-                      <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                      <img class="slider__cat-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение худого кота, питающегося по программе">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__buttons">
-                <button type="button" class="slider__button slider__button--before">Было</button>
-                <div class="slider__toggle">
-                  <div class="slider__bar"></div>
-                  <button type="button" class="slider__tog"></button>
-                </div>
-                <button type="button" class="slider__button slider__button--after">Стало</button>
               </div>
             </div>
           </div>
