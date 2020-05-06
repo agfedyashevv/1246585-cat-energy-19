@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var jsmin = require("gulp-jsmin");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -90,7 +91,10 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("copy", function () {
