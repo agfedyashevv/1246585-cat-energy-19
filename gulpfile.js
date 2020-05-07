@@ -92,7 +92,6 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(htmlmin({ collapseWhitespace: true }))
-    // .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build"))
     .pipe(server.stream());
 });
