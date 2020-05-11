@@ -9,16 +9,23 @@
 @media (max-width: @mobile-width-only) {
   .select-program::before {
     .pseudo();
-    background: @green-under-cat url("../img/index-background-mobile@1x.jpg") no-repeat top center;
+    background-color: @green-under-cat;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
     .set-img-size(320px; 305px);
+    width: 100vw;
     z-index: -1;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: @green-under-cat url("../img/index-background-mobile@2x.jpg") no-repeat top center;
-      background-size: cover;
+      background-color: @green-under-cat;
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
     }
   }
 }
