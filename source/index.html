@@ -20,7 +20,7 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Кэт энерджи">
+                <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина Кэт энерджи">
               </picture>
             </a>
             <button class="nav__toggle" type="button" aria-label="Открыть меню"><span class="nav__burger"></span></button>
@@ -71,22 +71,22 @@
       <section class="type">
         <div class="page-wrap">
           <h2 class="visually-hidden">Разновидности программ по питанию кота</h2>
-          <div class="type__list program">
-            <article class="program__item">
+          <ul class="type__list program">
+            <li class="program__item">
               <h3 class="program__title program__title--reduce">Похудение</h3>
               <p class="program__description program__description--reduce">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a href="#" class="program__link">Каталог Slim</a>
-            </article>
-            <article class="program__item">
+            </li>
+            <li class="program__item">
               <h3 class="program__title program__title--increase">Набор массы</h3>
               <p class="program__description program__description--increase">
                 Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a href="#" class="program__link">Каталог Pro</a>
-            </article>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -119,16 +119,16 @@
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
               </p>
               <div class="example__flex">
-                <div class="example__proof proof">
-                  <div class="proof__item">
+                <ul class="example__proof proof">
+                  <li class="proof__item">
                     <p class="proof__title">5 кг</p>
                     <p class="proof__text">снижение веса</p>
-                  </div>
-                  <div class="proof__item">
+                  </li>
+                  <li class="proof__item">
                     <p class="proof__title">60 дней</p>
                     <p class="proof__text">затрачено времени</p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
                 <p class="example__spending"><span class="example__cost">Затраты на питание:</span> 15 000 руб.</p>
               </div>
             </div>
@@ -137,12 +137,12 @@
               <input type="radio" class="visually-hidden slider__btn-2" id="id-btn-2" name="slider__input">
               <div class="slider__block">
                 <div class="slider__buttons">
-                  <label class="slider__button slider__button--before" for="id-btn-1">Было</label>
+                  <label class="slider__button slider__button--before" for="id-btn-1" tabindex="0">Было</label>
                   <div class="slider__toggle">
                     <div class="slider__bar"></div>
                     <button type="button" class="slider__tog" aria-label="Двигайте бегунок влево-вправо, чтобы отобразился толстый кот до питания по программе и худой кот после питания по программе"></button>
                   </div>
-                  <label class="slider__button slider__button--after" for="id-btn-2">Стало</label>
+                  <label class="slider__button slider__button--after" for="id-btn-2" tabindex="0">Стало</label>
                 </div>
                 <div class="slider__list">
                   <div class="slider__slides">
@@ -265,16 +265,12 @@
             </ul>
           </div>
           <div class="footer__copyright copyright">
-            <div class="copyright__text">
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </div>
-            <div class="copyright__logo">
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
-                <svg class="copyright__htmlacademy-svg" width="27" height="34">
-                  <use xlink:href="#icon-logo-htmlacademy"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт HTML Academy">
+              <span class="copyright__link">HTML Academy</span>
+              <svg class="copyright__htmlacademy-svg" width="27" height="34">
+                <use xlink:href="#icon-logo-htmlacademy"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
